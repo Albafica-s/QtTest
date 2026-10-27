@@ -1,0 +1,61 @@
+QWidget#Calculator {
+    background-color: #1e1e1e;
+}
+
+QLabel#expressionLabel {
+    color: #9aa0a6;
+    font-size: 16px;
+    padding-right: 4px;
+}
+
+QLabel#displayLabel {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 500;
+    padding-right: 4px;
+}
+
+QPushButton {
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #2d2d30;
+}
+
+QPushButton[role="digit"] {
+    background-color: #3a3a3d;
+}
+
+QPushButton[role="operator"] {
+    background-color: #333336;
+    color: #ff9f43;
+}
+
+QPushButton[role="function"] {
+    background-color: #333336;
+    color: #ff6b6b;
+}
+
+QPushButton[role="equals"] {
+    background-color: #ff9f43;
+    color: #1e1e1e;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #4a4a4e;
+}
+
+QPushButton[role="equals"]:hover {
+    background-color: #ffb066;
+}
+
+QPushButton:pressed {
+    background-color: #5a5a5e;
+}
+
+QPushButton[role="equals"]:pressed {
+    background-color: #e08c33;
+}
