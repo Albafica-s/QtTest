@@ -66,6 +66,9 @@ Calculator::Calculator(QWidget *parent)
         connect(button, &QPushButton::clicked, this, [this, key] { handleKey(key); });
     }
 
+    // U+232B 退格符号只在符号字体中存在，单独指定字体避免显示成方框。
+    ui->btnBackspace->setFont(QFont(QStringLiteral("Segoe UI Symbol")));
+
     resetCalculator();
     setFocus();
 }
